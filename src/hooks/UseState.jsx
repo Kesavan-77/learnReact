@@ -18,7 +18,7 @@ export default function UseState() {
     )
 }
 
-// //An simple outline for behind the scene useState
+// // //An simple outline for behind the scene useState
 // function useState(){
 //     let num;
 //     function update(val){
@@ -29,7 +29,7 @@ export default function UseState() {
 
 // console.log(useState()) //output:[ undefined, [Function: update] ]
 
-//destructure return array for storing in seperate value
+// // destructure return array for storing in seperate value
 // const [val,setVal] = useState();
 
 // console.log(val,setVal); //output: undefined [Function: update]

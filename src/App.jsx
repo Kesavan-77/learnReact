@@ -1,8 +1,10 @@
 import {Card, Board} from './card'
 import List from './List'
-import UseState from './UseState';
-import UseEffect from './UseEffect';
+import UseState from './hooks/UseState';
+import UseEffect from './hooks/UseEffect';
 import Calculator from './tasks/Calculator';
+import UseRef from './hooks/UseRef';
+import UseMemo from './hooks/UseMemo';
 
 
 function App() {
@@ -16,7 +18,7 @@ function App() {
 
   return (
     <>
-      <Calculator />
+      <UseMemo />
     </>
   )
 }
