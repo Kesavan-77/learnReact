@@ -5,6 +5,7 @@ import UseEffect from './hooks/UseEffect';
 import Calculator from './tasks/Calculator';
 import UseRef from './hooks/UseRef';
 import UseMemo from './hooks/UseMemo';
+import RegistrationForm from './tasks/RegistrationForm';
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
 
   return (
     <>
-      <UseMemo />
+      <RegistrationForm />
     </>
   )
 }
