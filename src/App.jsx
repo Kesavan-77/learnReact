@@ -1,11 +1,10 @@
-import {Card, Board} from './card'
-import List from './List'
-import UseState from './hooks/UseState';
-import UseEffect from './hooks/UseEffect';
-import Calculator from './tasks/Calculator';
-import UseRef from './hooks/UseRef';
-import UseMemo from './hooks/UseMemo';
-import RegistrationForm from './tasks/RegistrationForm';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Error from './pages/Error';
+import Home from './pages/Home';
+import UserPage from './pages/UserPage';
+import Navbar from './tasks/Navbar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function App() {
@@ -19,7 +18,17 @@ function App() {
 
   return (
     <>
-      <RegistrationForm />
+    <BrowserRouter>
+    <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/user/:userName' element={<UserPage />} />
+        <Route path='*' element={<Error />} />
+
+      </Routes>
+    </BrowserRouter>
     </>
   )
 }
